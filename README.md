@@ -17,8 +17,8 @@
 
 ```java
 
-	synchronized (ThreadSafeCounter.class) {
-		ThreadSafeCounter.incrementCounter();
+	synchronized (ThreadSafeCounterSingleton.class) {
+		ThreadSafeCounterSingleton.incrementCounter();
 	}
 
 ```
@@ -27,8 +27,8 @@
 
 ```java
 
-	synchronized (ThreadSafeCounter.class) {
-		System.out.println(ThreadSafeCounter.getCounter());
+	synchronized (ThreadSafeCounterSingleton.class) {
+		System.out.println(ThreadSafeCounterSingleton.getCounter());
 	}
 
 ```
