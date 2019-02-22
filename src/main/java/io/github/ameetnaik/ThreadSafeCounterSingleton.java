@@ -30,5 +30,14 @@ public class ThreadSafeCounterSingleton {
 			readLock.unlock();
 		}
 	}
+	
+	public static void resetCounter(){
+		writeLock.lock();
+		try {
+			count = 0;
+		} finally {
+			writeLock.unlock();
+		}
+	}
 
 }
